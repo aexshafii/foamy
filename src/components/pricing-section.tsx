@@ -7,7 +7,7 @@ const FACTS = [
 
 export function PricingSection() {
   return (
-    <section className="w-full py-10">
+    <section className="py-10 md:mx-20">
       <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
         {FACTS.map((fact) => (
           <div key={fact.label}>

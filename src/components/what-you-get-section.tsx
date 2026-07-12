@@ -15,7 +15,7 @@ const ITEMS = [
 
 export function WhatYouGetSection() {
   return (
-    <section className="mt-24 md:mt-40">
+    <section className="mt-24 md:mx-20 md:mt-40">
       <h2 className="text-3xl font-bold text-primary md:text-[36px]">
         What you get
       </h2>

@@ -32,14 +32,14 @@ const PROJECTS = [
 
 export function ProjectsSection() {
   return (
-    <section className="relative mt-24 mb-32 md:mt-40 md:mb-80">
+    <section className="relative mt-24 mb-32 md:mx-20 md:mt-40 md:mb-80">
       <Image
         src="/images/smile-marker.webp"
         alt=""
         aria-hidden
         width={815}
         height={900}
-        className="absolute -top-16 right-12 w-24 md:-top-20 md:w-32"
+        className="absolute -top-16 right-4 w-24 md:-top-32 md:-right-24 md:w-[250px]"
       />
       <div className="rounded-2xl border border-primary p-8">
         <h2 className="text-3xl font-bold text-primary md:text-[36px]">
@@ -81,7 +81,7 @@ export function ProjectsSection() {
         aria-hidden
         width={1468}
         height={1512}
-        className="absolute -bottom-32 left-4 w-28 md:-bottom-56 md:w-40"
+        className="absolute -bottom-32 left-4 -z-10 w-28 md:-bottom-60 md:-left-12 md:w-[400px]"
       />
     </section>
   );

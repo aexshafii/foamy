@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export function AboutSection() {
   return (
-    <section className="my-20">
+    <section className="my-20 md:mx-20">
       <div className="grid grid-cols-1 gap-10 rounded-2xl bg-primary p-8 md:grid-cols-2 md:p-10">
         <div className="min-w-0">
           <h2 className="text-3xl font-bold text-primary-foreground md:text-[36px]">
@@ -32,9 +32,8 @@ export function AboutSection() {
             on together.
           </p>
           <Button
-            variant="secondary"
             size="lg"
-            className="mt-10 h-14 w-full max-w-[24rem] text-base"
+            className="mt-10 h-16 w-full bg-white text-sm text-primary hover:bg-white/85"
             nativeButton={false}
             render={
               <a

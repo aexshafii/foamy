@@ -30,14 +30,14 @@ const STEPS = [
 
 export function ProcessSection() {
   return (
-    <section className="relative mt-24 mb-32 md:mt-40 md:mb-80">
+    <section className="relative mt-24 mb-32 md:mx-20 md:mt-40 md:mb-80">
       <Image
         src="/images/wave-marker.png"
         alt=""
         aria-hidden
         width={1821}
         height={958}
-        className="absolute -top-24 right-[10%] hidden w-[34rem] md:block"
+        className="absolute -top-40 left-[31%] hidden w-[600px] md:block"
       />
       <div className="relative rounded-2xl bg-primary p-8 pb-16 md:pb-20">
         <h2 className="text-3xl font-bold text-primary-foreground md:text-[36px]">

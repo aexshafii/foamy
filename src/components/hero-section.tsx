@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export function HeroSection() {
   return (
-    <section className="relative mt-32 pb-24 md:mt-20 md:pb-40">
+    <section className="relative mt-32 pb-24 md:mt-20 md:pb-64">
       <div className="relative max-w-[55rem]">
         {/* Original .background_video: absolute, z -1, 60x50rem at top:-15rem left:15rem
             (mobile: 30x30rem at top:-10rem left:-3rem) */}
@@ -32,7 +32,7 @@ export function HeroSection() {
         </p>
         <Button
           size="lg"
-          className="mt-8 h-14 w-full max-w-[30rem] text-base"
+          className="mt-8 h-16 w-full max-w-[522px] text-sm md:ml-[125px]"
           nativeButton={false}
           render={
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" />
@@ -40,14 +40,6 @@ export function HeroSection() {
         >
           Book a Discovery Call
         </Button>
-        <Image
-          src="/images/line-marker.png"
-          alt=""
-          aria-hidden
-          width={240}
-          height={41}
-          className="mt-10 w-32 md:mt-14"
-        />
       </div>
     </section>
   );
