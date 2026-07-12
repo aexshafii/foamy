@@ -17,7 +17,7 @@ export function TrustedBySection() {
         aria-hidden
         width={492}
         height={471}
-        className="absolute -top-16 left-0 w-32 md:-top-48 md:left-20 md:w-[300px]"
+        className="absolute -top-48 left-20 hidden w-[300px] md:block"
       />
       <p className="text-primary">Trusted by:</p>
       <div className="mt-8 flex w-full flex-wrap items-center justify-center gap-x-[8vw] gap-y-10 py-8 md:h-[200px] md:flex-nowrap md:py-0">

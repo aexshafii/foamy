@@ -1,8 +1,7 @@
 const FACTS = [
   { label: "Time?", value: "2-8 weeks" },
   { label: "Investment?", value: "Starts at $2500 USD" },
-  // TODO: this date is stale (carried over from the original site) - confirm real availability.
-  { label: "Availability?", value: "I have a spot starting October 15" },
+  { label: "Availability?", value: "I have a spot starting September 1" },
 ];
 
 export function PricingSection() {

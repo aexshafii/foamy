@@ -4,11 +4,11 @@ import { site } from "@/lib/site";
 
 export function HeroSection() {
   return (
-    <section className="relative mt-32 pb-24 md:mt-20 md:pb-64">
+    <section className="relative mt-4 pb-24 md:mt-20 md:pb-64">
       <div className="relative max-w-[55rem]">
         {/* Original .background_video: absolute, z -1, 60x50rem at top:-15rem left:15rem
             (mobile: 30x30rem at top:-10rem left:-3rem) */}
-        <div className="absolute -top-40 -left-12 -z-10 h-[30rem] w-[30rem] md:-top-80 md:left-[25rem] md:h-[50rem] md:w-[70rem]">
+        <div className="absolute -top-44 -left-8 -z-10 h-[30rem] w-[30rem] md:-top-80 md:left-[25rem] md:h-[50rem] md:w-[70rem]">
           <video
             autoPlay
             loop
@@ -25,7 +25,7 @@ export function HeroSection() {
             <source src="/videos/green-blob.webm" type="video/webm" />
           </video>
         </div>
-        <h1 className="mt-12 max-w-[50rem] text-[2rem] leading-10 font-bold text-primary md:text-[46px] md:leading-[58px]">
+        <h1 className="mt-8 max-w-[50rem] text-[2rem] leading-10 font-bold text-primary md:mt-12 md:text-[46px] md:leading-[58px]">
           Captivating websites for startups that mean business
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-primary">
