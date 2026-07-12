@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const ITEMS = [
   {
     title: "Focus on design and conversion",
@@ -17,23 +15,15 @@ const ITEMS = [
 
 export function WhatYouGetSection() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 py-16">
-      <div className="relative inline-block">
-        <h2 className="text-3xl font-bold text-primary">What you get</h2>
-        <Image
-          src="/images/wave-marker.png"
-          alt=""
-          aria-hidden
-          width={1821}
-          height={958}
-          className="absolute top-full left-0 -mt-2 w-32"
-        />
-      </div>
-      <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
+    <section className="mt-24 md:mt-40">
+      <h2 className="text-3xl font-bold text-primary md:text-[36px]">
+        What you get
+      </h2>
+      <div className="grid grid-cols-1 gap-x-[100px] gap-y-10 py-12 md:grid-cols-3 md:py-20">
         {ITEMS.map((item) => (
           <div key={item.title}>
             <h3 className="font-bold text-primary">{item.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-primary">
+            <p className="mt-3 text-base leading-[26px] text-primary">
               {item.body}
             </p>
           </div>

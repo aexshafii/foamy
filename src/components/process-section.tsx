@@ -30,26 +30,26 @@ const STEPS = [
 
 export function ProcessSection() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 py-10">
-      <div className="relative overflow-hidden rounded-2xl bg-primary px-8 py-14 sm:px-14">
-        <Image
-          src="/images/x-marker.png"
-          alt=""
-          aria-hidden
-          width={492}
-          height={471}
-          className="absolute top-6 right-6 w-24 opacity-90 sm:w-32"
-        />
-        <h2 className="text-2xl font-bold text-primary-foreground">
+    <section className="relative mt-24 mb-32 md:mt-40 md:mb-80">
+      <Image
+        src="/images/wave-marker.png"
+        alt=""
+        aria-hidden
+        width={1821}
+        height={958}
+        className="absolute -top-24 right-[10%] hidden w-[34rem] md:block"
+      />
+      <div className="relative rounded-2xl bg-primary p-8 pb-16 md:pb-20">
+        <h2 className="text-3xl font-bold text-primary-foreground md:text-[36px]">
           The process
         </h2>
-        <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-x-16 sm:gap-y-12">
+        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-20 md:gap-y-14">
           {STEPS.map((step) => (
             <div key={step.title}>
-              <h3 className="font-bold text-primary-foreground">
+              <h3 className="text-xl font-bold text-primary-foreground">
                 {step.title}
               </h3>
-              <ul className="mt-3 space-y-1 text-sm text-primary-foreground/90">
+              <ul className="mt-4 space-y-1 text-base leading-[26px] text-primary-foreground">
                 {step.items.map((item) => (
                   <li key={item}>&ndash; {item}</li>
                 ))}

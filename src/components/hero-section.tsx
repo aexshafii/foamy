@@ -4,18 +4,35 @@ import { site } from "@/lib/site";
 
 export function HeroSection() {
   return (
-    <section className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-10 px-6 pt-6 pb-20 md:grid-cols-2 md:gap-6">
-      <div className="order-2 min-w-0 md:order-1">
-        <h1 className="text-4xl leading-tight font-bold text-primary sm:text-5xl">
+    <section className="relative mt-32 pb-24 md:mt-20 md:pb-40">
+      <div className="relative max-w-[55rem]">
+        {/* Original .background_video: absolute, z -1, 60x50rem at top:-15rem left:15rem
+            (mobile: 30x30rem at top:-10rem left:-3rem) */}
+        <div className="absolute -top-40 -left-12 -z-10 h-[30rem] w-[30rem] md:-top-80 md:left-[25rem] md:h-[50rem] md:w-[70rem]">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-contain"
+          >
+            <source src="/videos/green-blob.webm" type="video/webm" />
+            <source
+              src="/videos/green-blob.mp4"
+              type='video/mp4; codecs="hvc1"'
+            />
+          </video>
+        </div>
+        <h1 className="mt-12 max-w-[50rem] text-[2rem] leading-10 font-bold text-primary md:text-[46px] md:leading-[58px]">
           Captivating websites for startups that mean business
         </h1>
-        <p className="mt-6 max-w-md text-lg text-primary">
+        <p className="mt-6 max-w-2xl text-lg text-primary">
           Unlock your startup&rsquo;s full potential with custom websites
           engineered for high performance and maximum impact.
         </p>
         <Button
           size="lg"
-          className="mt-8 h-12 px-6 text-base"
+          className="mt-8 h-14 w-full max-w-[30rem] text-base"
           nativeButton={false}
           render={
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" />
@@ -29,23 +46,8 @@ export function HeroSection() {
           aria-hidden
           width={240}
           height={41}
-          className="mt-16 hidden w-40 md:block"
+          className="mt-10 w-32 md:mt-14"
         />
-      </div>
-      <div className="order-1 flex min-w-0 justify-center md:order-2 md:justify-end">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full min-w-0 max-w-md"
-        >
-          <source src="/videos/green-blob.webm" type="video/webm" />
-          <source
-            src="/videos/green-blob.mp4"
-            type='video/mp4; codecs="hvc1"'
-          />
-        </video>
       </div>
     </section>
   );
