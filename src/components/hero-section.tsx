@@ -16,11 +16,13 @@ export function HeroSection() {
             playsInline
             className="h-full w-full object-contain"
           >
-            <source src="/videos/green-blob.webm" type="video/webm" />
+            {/* hvc1 (HEVC with alpha) must come first: Safari plays it with
+                transparency, while VP9 webm renders a black background there */}
             <source
               src="/videos/green-blob.mp4"
               type='video/mp4; codecs="hvc1"'
             />
+            <source src="/videos/green-blob.webm" type="video/webm" />
           </video>
         </div>
         <h1 className="mt-12 max-w-[50rem] text-[2rem] leading-10 font-bold text-primary md:text-[46px] md:leading-[58px]">
@@ -32,7 +34,7 @@ export function HeroSection() {
         </p>
         <Button
           size="lg"
-          className="mt-8 h-16 w-full max-w-[522px] text-sm md:ml-[125px]"
+          className="mt-8 h-16 w-full max-w-[522px] text-sm"
           nativeButton={false}
           render={
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" />

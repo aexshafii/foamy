@@ -37,7 +37,7 @@ export function ProcessSection() {
         aria-hidden
         width={1821}
         height={958}
-        className="absolute -top-40 left-[31%] hidden w-[600px] md:block"
+        className="absolute -top-40 left-[31%] z-10 hidden w-[600px] md:block"
       />
       <div className="relative rounded-2xl bg-primary p-8 pb-16 md:pb-20">
         <h2 className="text-3xl font-bold text-primary-foreground md:text-[36px]">

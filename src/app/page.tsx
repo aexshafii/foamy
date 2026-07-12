@@ -16,7 +16,7 @@ export default function Home() {
       <Preloader />
       <GrainOverlay />
       <SiteHeader />
-      <main className="mx-4 flex flex-1 flex-col md:mx-20">
+      <main className="mx-4 flex flex-1 flex-col md:mx-32">
         <HeroSection />
         <TrustedBySection />
         <WhatYouGetSection />
