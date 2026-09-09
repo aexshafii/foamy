@@ -1,7 +1,7 @@
 const FACTS = [
   { label: "Time?", value: "2-8 weeks" },
-  { label: "Investment?", value: "Starts at $2500 USD" },
-  { label: "Availability?", value: "I have a spot starting September 1" },
+  { label: "Investment?", value: "Starts at $10,000 USD" },
+  { label: "Availability?", value: "I have a spot starting November 1" },
 ];
 
 export function PricingSection() {
