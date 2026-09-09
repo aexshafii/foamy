@@ -33,24 +33,12 @@ export function WhatYouGetSection() {
         What you get
       </h2>
       <div className="grid grid-cols-1 gap-x-[100px] gap-y-10 py-12 md:grid-cols-3 md:py-20">
-        {ITEMS.map((item, i) => (
-          <div key={item.title} className="contents">
-            <div>
-              <h3 className="font-bold text-primary">{item.title}</h3>
-              <p className="mt-3 text-base leading-[26px] text-primary">
-                {item.body}
-              </p>
-            </div>
-            {i === 0 && (
-              <Image
-                src="/images/line-marker.png"
-                alt=""
-                aria-hidden
-                width={240}
-                height={41}
-                className="w-[240px] md:hidden"
-              />
-            )}
+        {ITEMS.map((item) => (
+          <div key={item.title}>
+            <h3 className="font-bold text-primary">{item.title}</h3>
+            <p className="mt-3 text-base leading-[26px] text-primary">
+              {item.body}
+            </p>
           </div>
         ))}
       </div>
