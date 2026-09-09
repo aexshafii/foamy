@@ -39,7 +39,7 @@ export function ProjectsSection() {
         aria-hidden
         width={815}
         height={900}
-        className="absolute top-20 right-8 z-10 w-40 md:-top-32 md:-right-24 md:w-[250px]"
+        className="absolute top-0 right-0 -z-10 w-40 md:-top-32 md:-right-24 md:w-[250px]"
       />
       <div className="rounded-2xl border border-primary p-8">
         <h2 className="text-3xl font-bold text-primary md:text-[36px]">
