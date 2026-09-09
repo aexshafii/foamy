@@ -18,15 +18,16 @@ const ITEMS = [
 export function WhatYouGetSection() {
   return (
     <section className="relative mt-24 md:mx-20 md:mt-40">
-      {/* On mobile the original shows the stairs marker straddling this
-          section's top-left, bleeding off the viewport edge */}
+      {/* Mobile-only stairs marker. Mirrors the desktop treatment in
+          trusted-by-section: sits in the gap above the heading, fully on
+          screen, and behind the text (-z-10) rather than over it. */}
       <Image
         src="/images/x-marker.png"
         alt=""
         aria-hidden
         width={492}
         height={471}
-        className="absolute -top-24 -left-12 w-[172px] md:hidden"
+        className="absolute -top-44 left-2 -z-10 w-[172px] md:hidden"
       />
       <h2 className="text-3xl font-bold text-primary md:text-[36px]">
         What you get
